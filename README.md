@@ -19,24 +19,24 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 
 #### Create a Customer
 ```http
-POST /customer/createCustomer/id={id}
+   POST /customer/createCustomer/id={id}
 
 #### Update a customer
 ```http
-PUT /customer/updateCustomer
+   PUT /customer/updateCustomer
 
 #### Get a List of Customers (with Pagination, Sorting, and Searching)
 ```http
-GET /customer/listOfCustomers/page={page}&size={size}&searchBy={field}&search={searchTerm}
+   GET /customer/listOfCustomers/page={page}&size={size}&searchBy={field}&search={searchTerm}
 
 #### Get a Single Customer based on ID
 ```http
-GET /customer/customerById/id={id}
+   GET /customer/customerById/id={id}
 
 #### Add List of customer data to data base
 ```http
-POST /customer/addListOfDataToDb
+   POST /customer/addListOfDataToDb
 
 #### Delete a customer
 ```http
-DELETE /customer/deleteCustomer
+   DELETE /customer/deleteCustomer
