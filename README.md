@@ -137,11 +137,11 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 
 Note: As of now, this application can only run on a local system. Further development is required to deploy the application in the cloud.
 
-# Links
+## Links
 
 - Linked in - https://www.linkedin.com/in/kumaresanm1597
 - Github - https://github.com/kumaresh1597
 
-# Reach me
+## Reach me
 
 kumaresh.1597@gmail.com
