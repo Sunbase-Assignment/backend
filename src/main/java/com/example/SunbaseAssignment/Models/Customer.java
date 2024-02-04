@@ -16,9 +16,6 @@ import lombok.NoArgsConstructor;
 public class Customer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    @Column(unique = true,nullable = false)
     private String uuid;
     private String firstName;
     private String lastName;

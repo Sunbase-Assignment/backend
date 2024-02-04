@@ -31,11 +31,14 @@ public class CustomerService {
 
     public String createNewCustomer(CustomerRequestDto customerRequestDto) {
 
-        Customer customer = CustomerTransformer.convertDtoToEntity(customerRequestDto);
-        customer.setUuid(generateRandomUuid());
-        customerRepository.save(customer);
-
-        return "Customer created successfully";
+        try{
+            Customer customer = CustomerTransformer.convertDtoToEntity(customerRequestDto);
+            customer.setUuid(generateRandomUuid());
+            customerRepository.save(customer);
+            return "Customer created successfully";
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public CustomerResponseDto getCustomerById(String id) throws CustomerNotFountException {
@@ -55,7 +58,7 @@ public class CustomerService {
             throw new CustomerNotFountException("Invalid Customer ID");
         }
 
-        customerRepository.deleteById(customerOptional.get().getId());
+        customerRepository.deleteById(id);
 
         return "Customer deleted successfully";
     }

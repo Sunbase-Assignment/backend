@@ -14,14 +14,14 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/customer")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin("*")
 public class CustomerController {
 
     @Autowired
     private CustomerService customerService;
 
     @PostMapping("/createCustomer")
-    public ResponseEntity<?> createCustomer(@RequestBody CustomerRequestDto customerRequestDto){
+    public ResponseEntity<?> createCustomer(@RequestBody CustomerRequestDto customerRequestDto) throws RuntimeException{
         String response = customerService.createNewCustomer(customerRequestDto);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
@@ -49,7 +49,7 @@ public class CustomerController {
     public ResponseEntity<Page<CustomerResponseDto>> getAllCustomers(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size,
-            @RequestParam(defaultValue = "id") String sortField,
+            @RequestParam(defaultValue = "firstName") String sortField,
             @RequestParam(defaultValue = "asc") String sortOrder,
             @RequestParam(required = false) String searchTerm,
             @RequestParam(required = false) String searchBy){
