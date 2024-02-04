@@ -21,6 +21,7 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
         "username": "your username",
         "password": "your password"
       }
+  ```
 ```
 #### Create a Customer
 ```http
@@ -37,6 +38,7 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
         "email": "sam@gmail.com",
         "phone": "12345678"
       }
+  ```
 ```
 #### Update a customer
 ```http
@@ -52,6 +54,7 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
         "email": "sam@gmail.com",
         "phone": "12345678"
       }
+    ```
 ```
 #### Get a List of Customers (with Pagination, Sorting, and Searching)
 ```http
@@ -87,6 +90,7 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
         "phone": "12345678"
       }
     ]
+  ```
 ```
 #### Delete a customer
 ```http
