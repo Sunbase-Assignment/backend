@@ -7,7 +7,7 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 ## Backend
 
 ### Technologies Used
-- Backend: JSP Servlet / Spring Boot
+- Backend: Spring Boot
 - Database: MySQL
 - Authentication: JWT
 
@@ -41,3 +41,24 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 ```http
    DELETE /customer/deleteCustomer
 ```
+## Frontend
+
+### Technologies Used
+- Frontend : HTML,CSS,Javascript,ReactJs
+
+### Example of Customer object
+```json
+{
+  "first_name": "Jane",
+  "last_name": "Doe",
+  "street": "Elvnu Street",
+  "address": "H no 2",
+  "city": "Delhi",
+  "state": "Delhi",
+  "email": "sam@gmail.com",
+  "phone": "12345678"
+}
+```
+
+## How To Run
+
