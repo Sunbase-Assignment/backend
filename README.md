@@ -16,14 +16,42 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 #### Sign in
 ```http
   POST /admin/authenticate
+  ```json
+      {
+        "username": "your username",
+        "password": "your password"
+      }
 ```
 #### Create a Customer
 ```http
-   POST /customer/createCustomer/id={id}`
+   POST /customer/createCustomer/id={id}
+   Request body
+   ```json
+      {
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "street": "Elvnu Street",
+        "address": "H no 2",
+        "city": "Delhi",
+        "state": "Delhi",
+        "email": "sam@gmail.com",
+        "phone": "12345678"
+      }
 ```
 #### Update a customer
 ```http
-   PUT /customer/updateCustomer`
+   PUT /customer/updateCustomer/id={id}
+    ```json
+      {
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "street": "Elvnu Street",
+        "address": "H no 2",
+        "city": "Delhi",
+        "state": "Delhi",
+        "email": "sam@gmail.com",
+        "phone": "12345678"
+      }
 ```
 #### Get a List of Customers (with Pagination, Sorting, and Searching)
 ```http
@@ -36,11 +64,38 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 #### Add List of customer data to data base
 ```http
    POST /customer/addListOfDataToDb
+'''json
+    [
+        {
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "street": "Elvnu Street",
+        "address": "H no 2",
+        "city": "Delhi",
+        "state": "Delhi",
+        "email": "sam@gmail.com",
+        "phone": "12345678"
+      },
+      {
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "street": "Elvnu Street",
+        "address": "H no 2",
+        "city": "Delhi",
+        "state": "Delhi",
+        "email": "sam@gmail.com",
+        "phone": "12345678"
+      }
+    ]
 ```
 #### Delete a customer
 ```http
-   DELETE /customer/deleteCustomer
+   DELETE /customer/deleteCustomer/id={id}
 ```
+
+#### Add admin
+``` http
+    POST/admin/addAdmin
 ## Frontend
 
 ### Technologies Used
@@ -62,3 +117,8 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 
 ## How To Run
 
+1. Clone the repository to your local system.
+2. Add admin credentials to the database using the `POST /admin/addAdmin` API endpoint.
+3. Create your front end or use Postman to send requests to the required APIs and utilize the data.
+
+Note: As of now, this application can only run on a local system. Further development is required to deploy the application in the cloud.
