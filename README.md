@@ -136,3 +136,12 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 3. Create your front end or use Postman to send requests to the required APIs and utilize the data.
 
 Note: As of now, this application can only run on a local system. Further development is required to deploy the application in the cloud.
+
+# Links
+
+Linked in - https://www.linkedin.com/in/kumaresanm1597
+Github - https://github.com/kumaresh1597
+
+# Reach me
+
+kumaresh.1597@gmail.com
