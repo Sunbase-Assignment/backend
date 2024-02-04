@@ -16,18 +16,18 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 #### Sign in
 ```http
   POST /admin/authenticate
-  ```json
+```
+```json
       {
         "username": "your username",
         "password": "your password"
       }
   ```
-```
 #### Create a Customer
 ```http
    POST /customer/createCustomer/id={id}
-   Request body
-   ```json
+```
+```json
       {
         "first_name": "Jane",
         "last_name": "Doe",
@@ -39,11 +39,11 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
         "phone": "12345678"
       }
   ```
-```
 #### Update a customer
 ```http
    PUT /customer/updateCustomer/id={id}
-    ```json
+```
+```json
       {
         "first_name": "Jane",
         "last_name": "Doe",
@@ -55,7 +55,6 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
         "phone": "12345678"
       }
     ```
-```
 #### Get a List of Customers (with Pagination, Sorting, and Searching)
 ```http
    GET /customer/listOfCustomers/page={page}&size={size}&searchBy={field}&search={searchTerm}
@@ -67,6 +66,7 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 #### Add List of customer data to data base
 ```http
    POST /customer/addListOfDataToDb
+```
 '''json
     [
         {
@@ -91,7 +91,6 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
       }
     ]
   ```
-```
 #### Delete a customer
 ```http
    DELETE /customer/deleteCustomer/id={id}
