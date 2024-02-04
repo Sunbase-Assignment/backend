@@ -139,8 +139,8 @@ Note: As of now, this application can only run on a local system. Further develo
 
 # Links
 
-Linked in - https://www.linkedin.com/in/kumaresanm1597
-Github - https://github.com/kumaresh1597
+- Linked in - https://www.linkedin.com/in/kumaresanm1597
+- Github - https://github.com/kumaresh1597
 
 # Reach me
 
