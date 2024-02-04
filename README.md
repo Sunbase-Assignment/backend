@@ -15,14 +15,14 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 
 #### Sign in
 ```http
-  POST /admin/authenticate
+  POST /admin/authenticate`
 
 #### Create a Customer
-   POST /customer/createCustomer/id={id}
+   POST /customer/createCustomer/id={id}`
 
 #### Update a customer
 ```http
-   PUT /customer/updateCustomer
+   PUT /customer/updateCustomer`
 
 #### Get a List of Customers (with Pagination, Sorting, and Searching)
 ```http
