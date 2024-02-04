@@ -17,6 +17,7 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 ```http
   POST /admin/authenticate
 ```
+#####Request body
 ```json
       {
         "username": "your username",
@@ -27,6 +28,7 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 ```http
    POST /customer/createCustomer/id={id}
 ```
+#####Request body
 ```json
       {
         "first_name": "Jane",
@@ -43,6 +45,7 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 ```http
    PUT /customer/updateCustomer/id={id}
 ```
+#####Request body
 ```json
       {
         "first_name": "Jane",
@@ -54,20 +57,25 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
         "email": "sam@gmail.com",
         "phone": "12345678"
       }
-    ```
+```
 #### Get a List of Customers (with Pagination, Sorting, and Searching)
+
 ```http
    GET /customer/listOfCustomers/page={page}&size={size}&searchBy={field}&search={searchTerm}
 ```
+
 #### Get a Single Customer based on ID
+
 ```http
    GET /customer/customerById/id={id}
 ```
+
 #### Add List of customer data to data base
 ```http
    POST /customer/addListOfDataToDb
 ```
-'''json
+#####Request body
+```json
     [
         {
         "first_name": "Jane",
@@ -92,13 +100,16 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
     ]
   ```
 #### Delete a customer
+
 ```http
    DELETE /customer/deleteCustomer/id={id}
 ```
 
 #### Add admin
+
 ``` http
     POST/admin/addAdmin
+```
 ## Frontend
 
 ### Technologies Used
