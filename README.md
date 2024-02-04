@@ -18,7 +18,6 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
   POST /admin/authenticate
 
 #### Create a Customer
-```http
    POST /customer/createCustomer/id={id}
 
 #### Update a customer
