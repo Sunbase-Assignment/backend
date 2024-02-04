@@ -16,10 +16,11 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 #### Sign in
 ```http
   POST /admin/authenticate
-
+```
 #### Create a Customer
+```http
    POST /customer/createCustomer/id={id}`
-
+```
 #### Update a customer
 ```http
    PUT /customer/updateCustomer`
