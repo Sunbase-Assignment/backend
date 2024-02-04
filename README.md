@@ -15,6 +15,44 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 
 #### Sign in
 ```http
+POST /admin/authenticate
+Create a Customer
+http
+Copy code
+POST /customer/createCustomer?id={id}
+Update a Customer
+http
+Copy code
+PUT /customer/updateCustomer
+Get a List of Customers (with Pagination, Sorting, and Searching)
+http
+Copy code
+GET /customer/listOfCustomers?page={page}&size={size}&searchBy={field}&search={searchTerm}
+Get a Single Customer based on ID
+http
+Copy code
+GET /customer/customerById?id={id}
+Add List of Customer Data to Database
+http
+Copy code
+POST /customer/addListOfDataToDb
+Delete a Customer
+http
+Copy code
+DELETE /customer/deleteCustomer
+How to Run
+Provide instructions on how to run your application locally or deploy it.
+
+License
+This project is licensed under the MIT License.
+
+css
+Copy code
+
+Make sure to replace the placeholders in the "How to Run" secti
+
+#### Sign in
+```http
   POST /admin/authenticate`
 
 #### Create a Customer
