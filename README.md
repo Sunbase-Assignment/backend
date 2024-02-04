@@ -13,7 +13,7 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
 
 ### API Endpoints
 
-#### Sign in
+### Sign in
 ```http
   POST /admin/authenticate
 ```
@@ -24,7 +24,7 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
         "password": "your password"
       }
   ```
-#### Create a Customer
+### Create a Customer
 ```http
    POST /customer/createCustomer/id={id}
 ```
@@ -41,7 +41,7 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
         "phone": "12345678"
       }
   ```
-#### Update a customer
+### Update a customer
 ```http
    PUT /customer/updateCustomer/id={id}
 ```
@@ -58,19 +58,19 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
         "phone": "12345678"
       }
 ```
-#### Get a List of Customers (with Pagination, Sorting, and Searching)
+### Get a List of Customers (with Pagination, Sorting, and Searching)
 
 ```http
    GET /customer/listOfCustomers/page={page}&size={size}&searchBy={field}&search={searchTerm}
 ```
 
-#### Get a Single Customer based on ID
+### Get a Single Customer based on ID
 
 ```http
    GET /customer/customerById/id={id}
 ```
 
-#### Add List of customer data to data base
+### Add List of customer data to data base
 ```http
    POST /customer/addListOfDataToDb
 ```
@@ -99,13 +99,13 @@ This is a CRUD (Create, Read, Update, Delete) application for managing customer 
       }
     ]
   ```
-#### Delete a customer
+### Delete a customer
 
 ```http
    DELETE /customer/deleteCustomer/id={id}
 ```
 
-#### Add admin
+### Add admin
 
 ``` http
     POST/admin/addAdmin
